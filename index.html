@@ -21,10 +21,6 @@ title: Home
 <div class="recipes-container">
   {% for recipe in site.recipes %}
   <a href="{{ recipe.url | prepend: site.baseurl }}" class="recipe-tile">
-    <!-- <img
-      src="{% if recipe.photo %}{% if recipe.photo contains 'http://' or recipe.photo contains 'https://' %}{{ recipe.photo }}{% else %}{{ site.baseurl }}/{{ recipe.photo }}{% endif %}{% else %}{{ site.baseurl }}/assets/images/placeholder.jpg{% endif %}"
-      alt="{{ recipe.title | escape }}"
-    /> -->
     {% if recipe.photo %}
     <img
       src="{% if recipe.photo %}{% if recipe.photo contains 'http://' or recipe.photo contains 'https://' %}{{ recipe.photo }}{% else %}{{ site.baseurl }}/{{ recipe.photo }}{% endif %}{% else %}{{ site.baseurl }}/assets/images/placeholder.jpg{% endif %}"
@@ -63,7 +59,7 @@ title: Home
       {% for recipe in site.recipes %}
       {
         "id": "{{ count }}",
-        "url": "{{ recipe.url }}",
+        "url": "{{ recipe.url | prepend: site.baseurl }}",
         "title": "{{ recipe.title }}"
       }{% if forloop.last %}{% else %},{% endif %}
       {% assign count = count | plus: 1 %}
