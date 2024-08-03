@@ -22,10 +22,9 @@ title: Home
   {% for recipe in site.recipes %}
   <a href="{{ recipe.url | prepend: site.baseurl }}" class="recipe-tile">
     <img
-      src="{% if recipe.photo contains 'http' %}{{ recipe.photo }}{% else %}{{ recipe.photo | prepend: site.baseurl }}{% endif %}"
-      alt="{{ recipe.title }}"
+      src="{% if recipe.photo %}{% if recipe.photo contains 'http://' or recipe.photo contains 'https://' %}{{ recipe.photo }}{% else %}{{ site.baseurl }}/{{ recipe.photo }}{% endif %}{% else %}{{ site.baseurl }}/assets/images/placeholder.jpg{% endif %}"
+      alt="{{ recipe.title | escape }}"
     />
-    alt="{{ recipe.title }}" />
     <h2>{{ recipe.title }}</h2>
     <p>{{ recipe.content }}</p>
   </a>
