@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "5 Minute Artisan Bread"
+photo: assets/images/five_minute_artisan_bread.png
 ingredients:
   - "3 cups lukewarm water"
   - "1 1/2 tablespoons granulated yeast or 2 (7 1/4 g) packets granulated yeast"
@@ -26,6 +27,5 @@ instructions:
 servings: 4 servings
 ---
 
-This is the basic 'Boule' bread mix from the book "Artisan Bread in Five Minutes a Day" by Jeff Hertzberg and Zoe Francois. I've mainly posted this recipe so that I don't have to hook out the book every time. The dough is stored in the fridge for up to 2 weeks, taking out a bit each day as you need it, forming it and baking it. A forum I belong to love this bread, which is what inspired me to get the book. Most of them cook it in a Remoska, which is a gadget that I find invaluable. Remoska's are from Checkoslavakia, and I believe they've just come to the States. In the UK they're available from 
+This is the basic 'Boule' bread mix from the book "Artisan Bread in Five Minutes a Day" by Jeff Hertzberg and Zoe Francois. I've mainly posted this recipe so that I don't have to hook out the book every time. The dough is stored in the fridge for up to 2 weeks, taking out a bit each day as you need it, forming it and baking it. A forum I belong to love this bread, which is what inspired me to get the book. Most of them cook it in a Remoska, which is a gadget that I find invaluable. Remoska's are from Checkoslavakia, and I believe they've just come to the States. In the UK they're available from
 Strongly recommend getting the book, if you like this bread. They have lots of different kinds of bread which you make in this way (also sweet ones), plus ideas on how to ring the changes, recipes to use up the stale bread, etc. PS Someone said they were having difficulty getting hold of the book, so I tried to post an Amazon link for it here. But it just comes out as html gobbledey gook! If anyone knows how to do it, please let me know. Otherwise, try Amazon, guys :-) Very, very worth getting the book.
-

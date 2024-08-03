@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Vegan Waffles (Fluffy and Crispy)"
+photo: assets/images/vegan_waffles.png
 ingredients:
   - "1 1/2 cups unsweetened soy or coconut milk (or any vegan milk) (were pretty thick, maybe add more milk)"
   - "2 teaspoons apple cider vinegar or lemon juice "
@@ -17,10 +18,9 @@ instructions:
   - "Add the sugar, melted butter/oil, buttermilk mixture into the dry ingredients and using a spatula, gently mix the batter until JUST combined. It's okay (and normal) to have some lumps. The batter should be thick and scoopable."
   - "Turn on and preheat your waffle maker according to which done level that you want. I set mine to about medium because I like mine crisp and golden but also very fluffy."
   - "Using a ½ cup (125mL) measuring cup, scoop out some batter and pour/spread into the middle of the greased waffle maker. You don’t need to push it to the edges. Close and let cook until the steam has COMPLETELY stopped from the waffle maker. Don't open it before the steam is finished!"
-  - "Remove each waffle and place on a baking sheet in your oven or toaster oven on \"warm\" or 200F/95C to keep warm and crispy until finished with the entire batter. Continue with the rest of the batter."
+  - 'Remove each waffle and place on a baking sheet in your oven or toaster oven on "warm" or 200F/95C to keep warm and crispy until finished with the entire batter. Continue with the rest of the batter.'
   - "Serve with your favourite toppings like blueberry sauce and enjoy!"
 servings: 6 servings
 ---
 
 These are the BEST Vegan Waffles! They are crispy, so fluffy, and very simple with only pantry ingredients! I share some full-proof tips so they're perfect and great for meal prep!
-
