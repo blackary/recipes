@@ -1,2 +1,0 @@
-task run:
-  - bundle exec jekyll serve
