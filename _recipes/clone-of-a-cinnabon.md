@@ -2,21 +2,21 @@
 layout: recipe
 title: "Clone of a Cinnabon"
 ingredients:
-  - 1 cup warm milk (110 degrees F/45 degrees C)
-  - 2 eggs, room temperature
-  - 1/3 cup margarine, melted
-  - 4.5 cups bread flour
-  - 1 teaspoon salt
-  - 0.5 cup white sugar
-  - 2.5 teaspoons bread machine yeast
-  - 1 cup brown sugar, packed
-  - 2.5 tablespoons ground cinnamon
-  - 1/3 cup butter, softened
-  - 1.5 cups confectioners' sugar
-  - 0.25 cup butter, softened
-  - 1 (3 ounce) package cream cheese, softened
-  - 0.5 teaspoon vanilla extract
-  - 0.125 teaspoon salt
+  - "1 cup warm milk (110 degrees F/45 degrees C)"
+  - "2 eggs, room temperature"
+  - "1/3 cup margarine, melted"
+  - "4.5 cups bread flour"
+  - "1 teaspoon salt"
+  - "0.5 cup white sugar"
+  - "2.5 teaspoons bread machine yeast"
+  - "1 cup brown sugar, packed"
+  - "2.5 tablespoons ground cinnamon"
+  - "1/3 cup butter, softened"
+  - "1.5 cups confectioners' sugar"
+  - "0.25 cup butter, softened"
+  - "1 (3 ounce) package cream cheese, softened"
+  - "0.5 teaspoon vanilla extract"
+  - "0.125 teaspoon salt"
 instructions:
   - "Prepare dough: Place milk, eggs, margarine, flour, salt, white sugar, and yeast in the pan of a bread machine in the order recommended by the manufacturer. Select dough cycle; press Start."
   - "When dough has doubled in size, turn it out onto a lightly floured surface. Cover it with a kitchen towel or plastic wrap and let it rest for 10 minutes."

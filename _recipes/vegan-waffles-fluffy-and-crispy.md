@@ -2,15 +2,15 @@
 layout: recipe
 title: "Vegan Waffles (Fluffy and Crispy)"
 ingredients:
-  - 1 1/2 cups unsweetened soy or coconut milk (or any vegan milk) (were pretty thick, maybe add more milk)
-  - 2 teaspoons apple cider vinegar or lemon juice 
-  - 2 cups all-purpose flour ((240g))
-  - 1 tablespoon baking powder
-  - 1/2 teaspoon sea salt
-  - 1 tablespoon brown sugar or maple syrup
-  - 1/4 cup melted coconut oil or melted vegan butter
-  - 1/2 teaspoon vanilla extract
-  - fruits to serve or a dollop of vegan whipped cream
+  - "1 1/2 cups unsweetened soy or coconut milk (or any vegan milk) (were pretty thick, maybe add more milk)"
+  - "2 teaspoons apple cider vinegar or lemon juice "
+  - "2 cups all-purpose flour ((240g))"
+  - "1 tablespoon baking powder"
+  - "1/2 teaspoon sea salt"
+  - "1 tablespoon brown sugar or maple syrup"
+  - "1/4 cup melted coconut oil or melted vegan butter"
+  - "1/2 teaspoon vanilla extract"
+  - "fruits to serve or a dollop of vegan whipped cream"
 instructions:
   - "Mix the nut milk, vanilla extract and the lemon juice or ACV together in a small bowl/measuring cup. Set aside for about 5 minutes - this will make the vegan buttermilk."
   - "In a large bowl, sift the flour, baking powder and salt. The sifting really helps to make the waffles fluffy."

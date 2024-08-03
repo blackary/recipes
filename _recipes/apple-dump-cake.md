@@ -2,10 +2,10 @@
 layout: recipe
 title: "Apple Dump Cake"
 ingredients:
-  - 40 oz apple pie filling (two 20-oz cans)
-  - 1 tsp cinnamon
-  - 15.25 oz cake mix (white or yellow )
-  - 1 cup butter, unsalted
+  - "40 oz apple pie filling (two 20-oz cans)"
+  - "1 tsp cinnamon"
+  - "15.25 oz cake mix (white or yellow )"
+  - "1 cup butter, unsalted"
 instructions:
   - "Preheat oven to 350ºF. Grease a 9 x 13 inch baking dish"
   - "Spread both cans of apple pie filling into bottom of prepared baking dish"

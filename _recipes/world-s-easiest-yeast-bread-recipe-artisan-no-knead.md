@@ -2,11 +2,11 @@
 layout: recipe
 title: "World's Easiest Yeast Bread recipe - Artisan, NO KNEAD"
 ingredients:
-  - 3 cups (450g) flour (, bread or plain/all purpose (Note 1))
-  - 2 tsp instant or rapid rise yeast ((Note 2 for normal / active dry yeast))
-  - 2 tsp cooking / kosher salt (, NOT table salt (Note 3))
-  - 1 1/2 cups (375 ml) very warm tap water (, NOT boiling or super hot (ie up to 55°C/130°F) (Note 4))
-  - 1 1/2 tbsp flour (, for dusting)
+  - "3 cups (450g) flour (, bread or plain/all purpose (Note 1))"
+  - "2 tsp instant or rapid rise yeast ((Note 2 for normal / active dry yeast))"
+  - "2 tsp cooking / kosher salt (, NOT table salt (Note 3))"
+  - "1 1/2 cups (375 ml) very warm tap water (, NOT boiling or super hot (ie up to 55°C/130°F) (Note 4))"
+  - "1 1/2 tbsp flour (, for dusting)"
 instructions:
   - "Mix Dough: Mix flour, yeast and salt in a large bowl. Add water, then use the handle of a wooden spoon to mix until all the flour is incorporated. Dough will be wet and sloppy – not kneadable, but not runny like cake batter. Adjust with more water or flour if needed for right consistency (see video at 17 sec, Note 5)."
   - "Rise: Cover with cling wrap or plate, leave on counter for 2 - 3 hours until it doubles in volume, it’s wobbly like jelly and the top is bubbly (see video at 24 seconds). If after 1 hour it doesn’t seem to be rising, move it somewhere warmer (Note 6)."

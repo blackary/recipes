@@ -30,7 +30,8 @@ def create_markdown(recipe, instructions, ingredients):
     # Extract ingredients for this recipe
     for ingredient in ingredients:
         if ingredient["recipe_id"] == recipe["id"]:
-            markdown_content += f"  - {ingredient['note']}\n"
+            escaped_note = ingredient["note"].replace('"', '\\"')
+            markdown_content += f'  - "{escaped_note}"\n'
     markdown_content += "instructions:\n"
     # Extract instructions for this recipe
     for instruction in instructions:

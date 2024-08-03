@@ -2,11 +2,11 @@
 layout: recipe
 title: "Organic Oat Flour Drop Biscuits"
 ingredients:
-  - 1 cup oat flour (grind up up 1 cup of quick oats in blender)
-  - 2 tsp baking powder
-  - 1/3 cup milk
-  - 2 tbsp butter
-  - 1 egg
+  - "1 cup oat flour (grind up up 1 cup of quick oats in blender)"
+  - "2 tsp baking powder"
+  - "1/3 cup milk"
+  - "2 tbsp butter"
+  - "1 egg"
 instructions:
   - "Mix all dry ingredients together."
   - "Cut butter with a fork or pastry cutter into flour."

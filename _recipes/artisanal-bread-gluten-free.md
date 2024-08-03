@@ -2,15 +2,15 @@
 layout: recipe
 title: "Artisanal Bread – Gluten Free"
 ingredients:
-  - 2 teaspoons dry active yeast
-  - 2 teaspoons sugar
-  - 1½ cups warm water (105°F)
-  - 1 tsp xanthan gum if your all purpose flour does not contain it
-  - 3 cups gluten-free flour, plus more for dusting
-  - 2 teaspoons kosher or fine sea salt
-  - 2 tablespoons olive oil
-  - 2 large eggs, lightly beaten
-  - 1 teaspoon apple cider vinegar
+  - "2 teaspoons dry active yeast"
+  - "2 teaspoons sugar"
+  - "1½ cups warm water (105°F)"
+  - "1 tsp xanthan gum if your all purpose flour does not contain it"
+  - "3 cups gluten-free flour, plus more for dusting"
+  - "2 teaspoons kosher or fine sea salt"
+  - "2 tablespoons olive oil"
+  - "2 large eggs, lightly beaten"
+  - "1 teaspoon apple cider vinegar"
 instructions:
   - "Place a Dutch oven with the lid on in the oven and preheat the oven to 450°F. (Keep the pot in the oven while the bread rises.)"
   - "Combine the yeast, sugar, and warm water in a medium size bowl and whisk to dissolve the sugar."

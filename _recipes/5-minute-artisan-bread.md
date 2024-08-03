@@ -2,10 +2,10 @@
 layout: recipe
 title: "5 Minute Artisan Bread"
 ingredients:
-  - 3 cups lukewarm water
-  - 1 1/2 tablespoons granulated yeast or 2 (7 1/4 g) packets granulated yeast
-  - 1 1/2 tablespoons kosher salt or 1 1/2 tablespoons other coarse salt
-  - 6 1/2 cups unsifted unbleached all-purpose flour (not strong)
+  - "3 cups lukewarm water"
+  - "1 1/2 tablespoons granulated yeast or 2 (7 1/4 g) packets granulated yeast"
+  - "1 1/2 tablespoons kosher salt or 1 1/2 tablespoons other coarse salt"
+  - "6 1/2 cups unsifted unbleached all-purpose flour (not strong)"
 instructions:
   - "Warm the water slightly. It should feel just a little warmer than body temperature. Warm water will rise the dough to the right point for storage in about 2 hours. With cold water it will need 3-4 hours."
   - "Add the yeast to the water in a 5 quart bowl or, preferably, in a resealable, lidded (not airtight) plastic food container or food-grade bucket. Don't worry about getting it all to dissolve."

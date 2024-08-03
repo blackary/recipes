@@ -2,16 +2,16 @@
 layout: recipe
 title: "Fluffy Pancakes"
 ingredients:
-  - 0.75 cup milk
-  - 2 tablespoons white vinegar
-  - 1 cup all-purpose flour
-  - 2 tablespoons white sugar
-  - 1 teaspoon baking powder
-  - 0.5 teaspoon baking soda
-  - 0.5 teaspoon salt
-  - 1 egg
-  - 2 tablespoons butter, melted
-  - cooking spray
+  - "0.75 cup milk"
+  - "2 tablespoons white vinegar"
+  - "1 cup all-purpose flour"
+  - "2 tablespoons white sugar"
+  - "1 teaspoon baking powder"
+  - "0.5 teaspoon baking soda"
+  - "0.5 teaspoon salt"
+  - "1 egg"
+  - "2 tablespoons butter, melted"
+  - "cooking spray"
 instructions:
   - "Combine milk and vinegar in a medium bowl and set aside for 5 minutes to make sour milk."
   - "Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk egg and butter into soured milk. Pour flour mixture into milk mixture and whisk until lumps are gone."

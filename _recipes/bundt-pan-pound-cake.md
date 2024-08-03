@@ -2,19 +2,19 @@
 layout: recipe
 title: "Bundt Pan Pound Cake"
 ingredients:
-  - 1 Cup Flour
-  - 2 sticks (1 cup) butter
-  - 1/2 cup shortening
-  - 3 cups sugar
-  - 6 eggs
-  - 3 cups flour
-  - 1/2 tsp. salt
-  - 1/2 tsp. baking powder
-  - 1 cup milk
-  - 1 to 1 1/2 tsp. of flavoring (vanilla, almond, lemon extracts)
-  - Optional glaze:
-  - 1 1/2 cups sugar
-  - 1/4 cup orange juice
+  - "1 Cup Flour"
+  - "2 sticks (1 cup) butter"
+  - "1/2 cup shortening"
+  - "3 cups sugar"
+  - "6 eggs"
+  - "3 cups flour"
+  - "1/2 tsp. salt"
+  - "1/2 tsp. baking powder"
+  - "1 cup milk"
+  - "1 to 1 1/2 tsp. of flavoring (vanilla, almond, lemon extracts)"
+  - "Optional glaze:"
+  - "1 1/2 cups sugar"
+  - "1/4 cup orange juice"
 instructions:
   - "Cream together butter, shortening, sugar"
   - "Beat in eggs"

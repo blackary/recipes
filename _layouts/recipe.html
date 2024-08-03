@@ -7,7 +7,10 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   {% if page.photo %}
-  <img src="{{ page.photo }}" alt="{{ page.title }}" />
+  <img
+    src="{% if page.photo %}{% if page.photo contains 'http://' or page.photo contains 'https://' %}{{ page.photo }}{% else %}{{ site.baseurl }}/{{ page.photo }}{% endif %}{% endif %}"
+    alt="{{ page.title | escape }}"
+  />
   {% endif %}
   <div class="recipe-description">
     {{ content }}
