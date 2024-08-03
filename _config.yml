@@ -2,7 +2,9 @@ collections:
   recipes:
     output: true
 
-title: "recipes"
+name: "Blackwood Family Recipes"
+title: null
+
 
 baseurl: "/recipes"
 url: "https://blackary.com/"
