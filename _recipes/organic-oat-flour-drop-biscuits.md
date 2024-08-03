@@ -8,12 +8,12 @@ ingredients:
   - 2 tbsp butter
   - 1 egg
 instructions:
-  - Mix all dry ingredients together.
-  - Cut butter with a fork or pastry cutter into flour.
-  - Add wet ingredients to dry ingredients and mix well.
-  - Line a cookie sheet with parchment paper (greased with coconut oil).
-  - Drop a heaping tablespoon onto a pan.
-  - Bake at 425 degrees for 12-15 minutes.
+  - "Mix all dry ingredients together."
+  - "Cut butter with a fork or pastry cutter into flour."
+  - "Add wet ingredients to dry ingredients and mix well."
+  - "Line a cookie sheet with parchment paper (greased with coconut oil)."
+  - "Drop a heaping tablespoon onto a pan."
+  - "Bake at 425 degrees for 12-15 minutes."
 servings: 10 servings
 ---
 

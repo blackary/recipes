@@ -8,8 +8,8 @@ ingredients:
   - 16 oz. sour cream
   - salt and pepper (no more than 1 tsp each)
 instructions:
-  - Combine last 4 ingredients and then add to the potatoes. Stir well. 
-  - Place in crockpot and cook on high 8 hours.
+  - "Combine last 4 ingredients and then add to the potatoes. Stir well. "
+  - "Place in crockpot and cook on high 8 hours."
 servings: None
 ---
 

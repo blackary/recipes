@@ -16,14 +16,14 @@ ingredients:
   - 1 1/2 cups sugar
   - 1/4 cup orange juice
 instructions:
-  - Cream together butter, shortening, sugar
-  - Beat in eggs
-  - Sift together and add dry ingredients
-  - Add milk and flavoring
-  - Pour into a well greased and floured bundt pan. Place in cool oven, and turn on to 300. Bake for 1 1/2 hours (90 minutes). 
-  - Test for doneness with a pick. 
-  - Cool 10 minutes in pan, then turn out onto a cooling rack. 
-  - Brush glaze on cake while still warm.
+  - "Cream together butter, shortening, sugar"
+  - "Beat in eggs"
+  - "Sift together and add dry ingredients"
+  - "Add milk and flavoring"
+  - "Pour into a well greased and floured bundt pan. Place in cool oven, and turn on to 300. Bake for 1 1/2 hours (90 minutes). "
+  - "Test for doneness with a pick. "
+  - "Cool 10 minutes in pan, then turn out onto a cooling rack. "
+  - "Brush glaze on cake while still warm."
 servings: None
 ---
 

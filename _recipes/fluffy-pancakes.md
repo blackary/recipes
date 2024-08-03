@@ -13,9 +13,9 @@ ingredients:
   - 2 tablespoons butter, melted
   - cooking spray
 instructions:
-  - Combine milk and vinegar in a medium bowl and set aside for 5 minutes to make sour milk.
-  - Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk egg and butter into soured milk. Pour flour mixture into milk mixture and whisk until lumps are gone.
-  - Heat a large skillet over medium heat, and coat it with cooking spray. Pour 1/4 cupfuls of batter onto the skillet, and cook until bubbles form and the edges are dry, about 2 to 3 minutes. Flip with a spatula, and cook until browned on the other side. Repeat with remaining batter.
+  - "Combine milk and vinegar in a medium bowl and set aside for 5 minutes to make sour milk."
+  - "Combine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk egg and butter into soured milk. Pour flour mixture into milk mixture and whisk until lumps are gone."
+  - "Heat a large skillet over medium heat, and coat it with cooking spray. Pour 1/4 cupfuls of batter onto the skillet, and cook until bubbles form and the edges are dry, about 2 to 3 minutes. Flip with a spatula, and cook until browned on the other side. Repeat with remaining batter."
 servings: 4 servings
 ---
 

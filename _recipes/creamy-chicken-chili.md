@@ -18,10 +18,10 @@ ingredients:
   -  1½ teaspoons White Pepper
   -  1½ teaspoons Cayenne Pepper
 instructions:
-  - Cook the chicken and sauté with onion and spices.
-  - In a 5 to 6 quart crockpot, combine all ingredients.
-  - Cover and cook on low for 3-4 hours or until heated through.
-  - Serve with salsa verde and chopped fresh cilantro.
+  - "Cook the chicken and sauté with onion and spices."
+  - "In a 5 to 6 quart crockpot, combine all ingredients."
+  - "Cover and cook on low for 3-4 hours or until heated through."
+  - "Serve with salsa verde and chopped fresh cilantro."
 servings: None
 ---
 

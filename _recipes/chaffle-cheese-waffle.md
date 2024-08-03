@@ -7,7 +7,7 @@ ingredients:
   - 0.5 cup almond flour 
   - 1 tsp vanilla 
 instructions:
-  - Mix and make in waffle maker, about 4 minutes 
+  - "Mix and make in waffle maker, about 4 minutes "
 servings: 1 waffle
 ---
 
