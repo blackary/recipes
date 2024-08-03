@@ -2,5 +2,7 @@ collections:
   recipes:
     output: true
 
+title: "recipes"
+
 baseurl: "/recipes"
 url: "https://blackary.com/"
