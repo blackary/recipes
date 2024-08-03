@@ -1,0 +1,114 @@
+---
+layout: default
+title: Home
+---
+
+<h2>Blackwood Family Recipes</h2>
+<!-- <p>Search and find your favorite recipes.</p> -->
+
+<!-- <h2>Search Recipes</h2> -->
+<input
+  type="text"
+  id="search-input"
+  placeholder="Search for recipes..."
+  autocomplete="off"
+/>
+<div id="search-results" class="dropdown-content">
+  <!-- Search results will be dynamically inserted here -->
+</div>
+
+<!-- Recipes Tiles -->
+<div class="recipes-container">
+  {% for recipe in site.recipes %}
+  <a href="{{ recipe.url }}" class="recipe-tile">
+    <img
+      src="{{ recipe.photo | default: '/assets/images/placeholder.jpg' }}"
+      alt="{{ recipe.title }}"
+    />
+    <h2>{{ recipe.title }}</h2>
+    <p>{{ recipe.content }}</p>
+  </a>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Initialize lunr
+    var idx = lunr(function () {
+      this.field('title');
+      this.field('content');
+      this.ref('id');
+
+      {% assign count = 0 %}
+      {% for recipe in site.recipes %}
+      this.add({
+        "title": "{{ recipe.title | escape }}",
+        "content": `{{ recipe.content | strip_html | escape }}`,
+        "id": "{{ count }}"
+      });
+      {% assign count = count | plus: 1 %}
+      {% endfor %}
+    });
+
+    // List of recipes to map IDs to URLs and titles
+    var recipes = [
+      {% assign count = 0 %}
+      {% for recipe in site.recipes %}
+      {
+        "id": "{{ count }}",
+        "url": "{{ recipe.url }}",
+        "title": "{{ recipe.title }}"
+      }{% if forloop.last %}{% else %},{% endif %}
+      {% assign count = count | plus: 1 %}
+      {% endfor %}
+    ];
+
+    // Search function
+    var input = document.getElementById('search-input');
+  var resultsDiv = document.getElementById('search-results');
+
+  input.addEventListener('input', function () {
+    var query = this.value;
+    if (query.length < 2) { // Optionally, only search when at least 2 characters are typed
+      resultsDiv.style.display = 'none';
+      return;
+    }
+
+    var results = idx.search(query);
+    resultsDiv.innerHTML = ''; // Clear previous results
+    if (results.length === 0) {
+      resultsDiv.style.display = 'none';
+    } else {
+      results.forEach(function (result) {
+        var recipe = recipes.find(r => r.id === result.ref);
+        var a = document.createElement('a');
+        a.href = recipe.url;
+        a.textContent = recipe.title;
+        resultsDiv.appendChild(a);
+      });
+      resultsDiv.style.display = 'block';
+    }
+  });
+
+  // Hide dropdown when clicking outside
+  document.addEventListener('click', function (event) {
+    if (!input.contains(event.target)) {
+      resultsDiv.style.display = 'none';
+    }
+  });
+  });
+</script>
+
+<style>
+  .recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .recipe-tile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 30%; /* Adjust based on preference */
+  }
+</style>
