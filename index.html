@@ -20,9 +20,9 @@ title: Home
 <!-- Recipes Tiles -->
 <div class="recipes-container">
   {% for recipe in site.recipes %}
-  <a href="{{ recipe.url }}" class="recipe-tile">
+  <a href="{{ recipe.url | prepend: site.baseurl }}" class="recipe-tile">
     <img
-      src="{{ recipe.photo | default: '/assets/images/placeholder.jpg' }}"
+      src="{{ recipe.photo | default: '/assets/images/placeholder.jpg' | prepend: site.baseurl }}"
       alt="{{ recipe.title }}"
     />
     <h2>{{ recipe.title }}</h2>
