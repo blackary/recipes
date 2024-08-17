@@ -1,2 +1,14 @@
-task run:
-  - bundle exec jekyll serve
+version: '3'
+
+tasks:
+  run:
+    cmds:
+      - open http://localhost:4000/recipes/
+      - bundle exec jekyll serve
+
+  recipe:
+    desc: Generate a recipe markdown file from a URL
+    cmds:
+      - which python
+      - python generate_recipe.py
+    silent: true

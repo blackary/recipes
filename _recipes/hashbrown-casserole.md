@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: "Hashbrown Casserole"
+title: "Cheesy Potatoe Casserole"
 ingredients:
   - "2 pgk (4 pounds) shredded hashbrowns"
   - "2 can cream of chicken soup"
@@ -15,4 +15,3 @@ servings: None
 
 This is a double recipe
 Recipe by Sharon McKissick
-

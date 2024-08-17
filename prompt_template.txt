@@ -1,0 +1,28 @@
+Given the recipe URL: {{URL}}
+
+Generate a markdown file for the recipe at {{URL}} using this exact structure, replacing placeholders with extracted information:
+
+---
+layout: recipe
+title: "TITLE"
+ingredients:
+  - "INGREDIENT1"
+  - "INGREDIENT2"
+instructions:
+  - "STEP1"
+  - "STEP2"
+servings: SERVINGS
+photo: "PHOTO_URL"
+---
+
+ATTRIBUTION OR BRIEF NOTES
+
+
+
+Omit any fields if information is unavailable. Only output the markdown content, nothing else.
+
+DO NOT include triple quotes in your output.
+
+Please verify that the photo url is valid and is from the recipe website if including one.
+
+Please include the beginning and enting ---s for yaml front matter
