@@ -3,6 +3,12 @@ layout: default
 title: Home
 ---
 
+<link
+  rel="icon"
+  type="image/x-icon"
+  href="{{ site.baseurl }}/assets/images/favicon.png"
+/>
+
 <h2>Blackwood Family Recipes</h2>
 <!-- <p>Search and find your favorite recipes.</p> -->
 
@@ -21,12 +27,18 @@ title: Home
 <div class="recipes-container">
   {% for recipe in site.recipes %}
   <a href="{{ recipe.url | prepend: site.baseurl }}" class="recipe-tile">
-    {% if recipe.photo %}
     <img
-      src="{% if recipe.photo %}{% if recipe.photo contains 'http://' or recipe.photo contains 'https://' %}{{ recipe.photo }}{% else %}{{ site.baseurl }}/{{ recipe.photo }}{% endif %}{% else %}{{ site.baseurl }}/assets/images/placeholder.jpg{% endif %}"
+      src="{%- if recipe.photo -%}
+        {%- if recipe.photo contains 'http://' or recipe.photo contains 'https://' -%}
+          {{- recipe.photo -}}
+        {%- else -%}
+          {{- site.baseurl -}}/{{- recipe.photo -}}
+        {%- endif -%}
+      {%- else -%}
+        {{- site.baseurl -}}/assets/images/recipe_generic.png
+      {%- endif -%}"
       alt="{{ recipe.title | escape }}"
     />
-    {% endif %}
     <h2>{{ recipe.title }}</h2>
 
     <div class="recipe-content">{{ recipe.content }}</div>
