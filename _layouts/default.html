@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
+    <!-- Add these new meta tags and link -->
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}" />
+    <link
+      rel="apple-touch-icon"
+      href="{{ '/assets/images/icon-192x192.png' | relative_url }}"
+    />
+    <!-- Existing content -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
     <link
       rel="stylesheet"
@@ -28,5 +36,15 @@
       <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
     </header>
     <main>{{ content }}</main>
+    <!-- Add this script tag at the end of the body -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register(
+            '{{ "/service-worker.js" | relative_url }}'
+          );
+        });
+      }
+    </script>
   </body>
 </html>
