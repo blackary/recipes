@@ -26,6 +26,6 @@ instructions:
 servings: 12 slices
 ---
 
-Adapted from [Sugar Spun Run](https://sugarspunrun.com/best-cheesecake-recipe/).
+Adapted from https://sugarspunrun.com/best-cheesecake-recipe/.
 
 For more details on making this crust or to use whole graham crackers, please see my Graham Cracker Crust Recipe. Make sure that you use the brick-style cream cheese, not the spreadable version that is available in tubs. Checking the cheesecake at 50 minutes is recommended, but it may take as long as 75 minutes to bake. Cooling the cheesecake on top of the oven can help avoid cracks.
