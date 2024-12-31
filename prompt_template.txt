@@ -1,6 +1,6 @@
-Given the recipe URL: {{URL}}
+Given the recipe HTML file: {{CONTENTS}} (note this came from {{URL}} originally)
 
-Generate a markdown file for the recipe at {{URL}} using this exact structure, replacing placeholders with extracted information:
+Generate a markdown file for the recipe using this exact structure, replacing placeholders with extracted information:
 
 ---
 layout: recipe
@@ -25,4 +25,4 @@ DO NOT include triple quotes in your output.
 
 Please verify that the photo url is valid and is from the recipe website if including one.
 
-Please include the beginning and enting ---s for yaml front matter
+Please include the beginning and ending ---s for yaml front matter

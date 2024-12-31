@@ -1,7 +1,8 @@
 import os
+from pathlib import Path
 import re
 import llm
-
+import requests
 
 def sanitize_filename(filename):
     return re.sub(r"[^a-z0-9-]", "-", filename.lower()).strip("-")
@@ -16,7 +17,19 @@ def generate_recipe(url):
         prompt_template = file.read()
 
     # Generate recipe content
-    recipe_prompt = prompt_template.replace("{{URL}}", url)
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        contents = response.text
+    except Exception as e:
+        print(f"Error fetching URL {url}: {e}")
+        local_content = Path("contents.txt")
+        if not local_content.exists():
+            print("Add contents.txt to the current directory and try again.")
+            return
+        contents = local_content.read_text()
+
+    recipe_prompt = prompt_template.replace("{{CONTENTS}}", contents).replace("{{URL}}", url)
     recipe_content = model.prompt(recipe_prompt).text()
 
     # Generate filename
