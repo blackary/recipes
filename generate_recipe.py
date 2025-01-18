@@ -4,36 +4,44 @@ import re
 import llm
 import requests
 
+
 def sanitize_filename(filename):
     return re.sub(r"[^a-z0-9-]", "-", filename.lower()).strip("-")
 
 
-def generate_recipe(url):
+def generate_recipe_from_text(filename: str = "contents.txt"):
     model = llm.get_model("gpt-4o")
     model.key = os.getenv("OPENAI_API_KEY")
 
-    # Read prompt template
-    with open("prompt_template.txt", "r") as file:
-        prompt_template = file.read()
+    local_content = Path(filename)
+    if not local_content.exists():
+        print(f"File {filename} does not exist.")
+        return
+    contents = local_content.read_text()
 
-    # Generate recipe content
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        contents = response.text
-    except Exception as e:
-        print(f"Error fetching URL {url}: {e}")
-        local_content = Path("contents.txt")
-        if not local_content.exists():
-            print("Add contents.txt to the current directory and try again.")
-            return
-        contents = local_content.read_text()
+    generate_recipe(contents)
 
-    recipe_prompt = prompt_template.replace("{{CONTENTS}}", contents).replace("{{URL}}", url)
+
+def generate_recipe_from_url(url: str):
+    contents = requests.get(url).text
+    generate_recipe(contents, url)
+
+
+def generate_recipe(contents: str, url: str | None = None):
+    model = llm.get_model("gpt-4o")
+    model.key = os.getenv("OPENAI_API_KEY")
+
+    prompt_template = Path("prompt_template.txt").read_text()
+
+    recipe_prompt = prompt_template.replace("{{CONTENTS}}", contents)
+    if url:
+        recipe_prompt = recipe_prompt.replace("{{URL}}", url)
     recipe_content = model.prompt(recipe_prompt).text()
 
     # Generate filename
-    filename_prompt = f"""Based on the following recipe content, suggest a concise (at most 3 words), hyphen-separated filename (without extension) that describes the recipe well:
+    filename_prompt = f"""
+    Based on the following recipe content, suggest a concise (at most 3 words),
+    hyphen-separated filename (without extension) that describes the recipe well:
 
 {recipe_content}
 
@@ -53,10 +61,19 @@ Filename:"""
 
 if __name__ == "__main__":
     while True:
-        url = input("Enter the recipe URL (or 'q' to quit): ").strip()
-        if url.lower() == "q":
+        url = input(
+            "Enter the recipe URL, or 'txt' to use a text file, or 'q' to quit: "
+        ).strip()
+        if url.lower() == "txt":
+            filename = input(
+                "Enter the filename of the text file (default: contents.txt): "
+            ).strip()
+            if not filename:
+                filename = "contents.txt"
+            generate_recipe_from_text(filename)
+        elif url.lower() == "q":
             break
-        if url:
-            generate_recipe(url)
+        elif url:
+            generate_recipe_from_url(url)
         else:
             print("Please enter a valid URL.")

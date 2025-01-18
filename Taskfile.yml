@@ -9,6 +9,5 @@ tasks:
   recipe:
     desc: Generate a recipe markdown file from a URL
     cmds:
-      - which python
-      - python generate_recipe.py
+      - uv run generate_recipe.py
     silent: true
