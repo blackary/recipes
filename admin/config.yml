@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "_recipes"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Author", name: "author", widget: "string", required: false}
+      - {label: "Source URL", name: "source_url", widget: "string", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - label: "Recipe Info"
+        name: "recipe_info"
+        widget: "object"
+        fields:
+          - {label: "Prep Time", name: "prep_time", widget: "string", required: false}
+          - {label: "Cook Time", name: "cook_time", widget: "string", required: false}
+          - {label: "Total Time", name: "total_time", widget: "string", required: false}
+          - {label: "Servings", name: "servings", widget: "string", required: false}
+      - label: "Ingredients"
+        name: "ingredients"
+        widget: "list"
+        field: {label: "Ingredient", name: "ingredient", widget: "string"}
+      - label: "Instructions"
+        name: "instructions"
+        widget: "list"
+        field: {label: "Step", name: "step", widget: "text"}
+      - label: "Notes"
+        name: "notes"
+        widget: "list"
+        required: false
+        field: {label: "Note", name: "note", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
