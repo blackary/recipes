@@ -1,7 +1,6 @@
 ---
 layout: recipe
 title: "Protein Balls"
-photo: ""
 ingredients:
   - "1 cup oats"
   - "1/2 cup peanut butter"
