@@ -2,7 +2,6 @@
 layout: recipe
 title: "Ethan's Scones"
 ingredients:
-  - "1 Cup Flour"
   - "1/3 cup butter"
   - "1 3/4 cup flour"
   - "3 tablespoons sugar"
@@ -11,8 +10,8 @@ ingredients:
   - "1 egg beaten"
   - "1/2 cup craisins"
   - "4-6 tablespoons half-and-half"
-  - "1 egg, bean"
-  - "white chocolate chiips"
+  - "1 egg white"
+  - "1/2 cup white chocolate chips"
 instructions:
   - "Heat oven to 400"
   - "Cut butter into flour, sugar, baking powder and salt with pastry blender until mixture resembles fine crumbs"
@@ -23,7 +22,7 @@ instructions:
   - "Place on ungreased cookie sheet"
   - "Brush dough with 1 egg (Ethan doesn't)"
   - "Bake until golden brown (10-12 minutes)"
-servings: None
+servings: 6-8
 ---
 
 
