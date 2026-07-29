@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Apple Dump Cake"
+photo: assets/images/recipes/apple-dump-cake.webp
 ingredients:
   - "40 oz apple pie filling (two 20-oz cans)"
   - "1 tsp cinnamon"
@@ -16,4 +17,3 @@ servings: 16 servings
 ---
 
 Easy Apple Dump Cake recipe with just 4 simple pantry ingredients! Cake mix & apple pie filling transform into a delicious apple dessert perfect for any occasion.
-

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Cheesy Potatoe Casserole"
+photo: assets/images/recipes/hashbrown-casserole.webp
 ingredients:
   - "2 pgk (4 pounds) shredded hashbrowns"
   - "2 can cream of chicken soup"

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Artisanal Bread – Gluten Free"
+photo: assets/images/recipes/artisanal-bread-gluten-free.webp
 ingredients:
   - "2 teaspoons dry active yeast"
   - "2 teaspoons sugar"
@@ -30,6 +31,4 @@ instructions:
   - "Note: If your all purpose gf flour does not contain xanthan gum add 1 tsp to the olive oil and mix, add to mixer after the eggs."
 servings: 
 ---
-
-
 

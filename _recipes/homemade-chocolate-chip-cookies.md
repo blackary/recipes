@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Homemade Chocolate Chip Cookies"
+photo: assets/images/recipes/chocolate-chip-cookies.webp
 ingredients:
   - "2 1/4 cups all-purpose flour"
   - "1/2 teaspoon baking soda"

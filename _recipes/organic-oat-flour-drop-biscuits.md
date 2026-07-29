@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Organic Oat Flour Drop Biscuits"
+photo: assets/images/recipes/oat-flour-drop-biscuits.webp
 ingredients:
   - "1 cup oat flour (grind up up 1 cup of quick oats in blender)"
   - "2 tsp baking powder"
@@ -18,4 +19,3 @@ servings: 10 servings
 ---
 
 I made some strawberry jam the other day. I really wanted a biscuit to put my jam on so I created this delicious drop biscuit. Enjoy!
-

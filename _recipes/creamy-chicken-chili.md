@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Creamy Chicken Chili"
+photo: assets/images/recipes/creamy-chicken-chili.webp
 ingredients:
   - " 3 Cans Great Northern Beans, rinsed and drained"
   - " 3 large Chicken Breasts, cubed"
@@ -24,6 +25,4 @@ instructions:
   - "Serve with salsa verde and chopped fresh cilantro."
 servings: None
 ---
-
-
 

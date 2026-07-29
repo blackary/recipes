@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "World's Easiest Yeast Bread recipe - Artisan, NO KNEAD"
+photo: assets/images/recipes/world-easiest-yeast-bread.webp
 ingredients:
   - "3 cups (450g) flour (, bread or plain/all purpose (Note 1))"
   - "2 tsp instant or rapid rise yeast ((Note 2 for normal / active dry yeast))"
@@ -23,4 +24,3 @@ servings: 10 servings
 ---
 
 Recipe video above. This super crusty homemade bread recipe is going to blow your mind! The world’s easiest yeast bread that’s just like the very best artisan bread you pay top dollar for, with an incredible crispy, chewy crust, and big fat holes like sourdough. Recipe is forgiving so don’t fret if things don’t go perfectly, it will be salvageable. SEE NOTES for options like no dutch oven, different yeast, MAKE AHEAD up to 3 days! And tomorrow, make the Cheese Bread version!
-

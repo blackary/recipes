@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Barb Mann's Lasagna"
+photo: assets/images/recipes/barb-mann-lasagna.webp
 ingredients:
   - "1 Cup Flour"
   - "1 lb. pkg. lasagna noodles"
@@ -19,6 +20,4 @@ instructions:
   - "(You can pre-cook the noodles but it works just fine to put them in uncooked.  It is best to let the casserole sit for about 15 minutes after baking before you serve it - it sets up a little during that time.)"
 servings: None
 ---
-
-
 

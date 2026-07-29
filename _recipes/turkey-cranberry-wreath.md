@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Turkey Cranberry Wreath"
+photo: assets/images/recipes/turkey-cranberry-wreath.webp
 ingredients:
   - "2 pkg refrigerated crescent rolls"
   - "1/2 cup mayonnaise"
@@ -23,4 +24,3 @@ servings:
 ---
 
  I hosted a Pampered Chef show last Saturday that was lots of fun! My friend (and Pampered Chef consultant), Memory, showed us how to make t...
-

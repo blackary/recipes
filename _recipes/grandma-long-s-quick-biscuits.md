@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Grandma Long's Quick Biscuits"
+photo: assets/images/recipes/grandma-quick-biscuits.webp
 ingredients:
   - "2 cups flour"
   - "1 tablespoon sugar"
@@ -15,6 +16,4 @@ instructions:
 "
 servings: None
 ---
-
-
 

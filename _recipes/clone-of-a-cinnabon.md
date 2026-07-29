@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Clone of a Cinnabon"
+photo: assets/images/recipes/clone-cinnabon.webp
 ingredients:
   - "1 cup warm milk (110 degrees F/45 degrees C)"
   - "2 eggs, room temperature"
@@ -31,4 +32,3 @@ servings: 12 servings
 ---
 
 This Cinnabon recipe makes rolls just like the ones from the chain bakery. A bread machine makes mixing the dough a snap, and the rest is super-easy.
-

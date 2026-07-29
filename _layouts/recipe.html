@@ -2,30 +2,69 @@
 layout: default
 ---
 
-<article class="recipe-content">
-  <a href="javascript:history.back()" class="back-button">Go Back</a>
+<article class="recipe-page">
+  <a href="{{ site.baseurl }}/" class="back-button" data-fallback-back>
+    <span aria-hidden="true">←</span> Back to recipes
+  </a>
   <h1>{{ page.title }}</h1>
+
+  <div class="recipe-meta-actions">
+    {% if page.servings and page.servings != "None" %}
+    <p class="recipe-yield"><span>Serves</span> {{ page.servings }}</p>
+    {% endif %}
+    <button class="start-cooking-button" type="button" data-start-cooking>
+      Start cooking
+    </button>
+  </div>
 
   {% if page.photo %}
   <img
+    class="recipe-hero-image"
     src="{% if page.photo %}{% if page.photo contains 'http://' or page.photo contains 'https://' %}{{ page.photo }}{% else %}{{ site.baseurl }}/{{ page.photo }}{% endif %}{% endif %}"
     alt="{{ page.title | escape }}"
   />
   {% endif %}
+  {% assign recipe_description = content | strip %}
+  {% if recipe_description != "" %}
   <div class="recipe-description">
     {{ content }}
-    <!-- This line renders the Markdown content -->
   </div>
+  {% endif %}
   <h2>Ingredients</h2>
-  <ul>
+  <ul data-recipe-ingredients>
     {% for ingredient in page.ingredients %}
     <li>{{ ingredient }}</li>
     {% endfor %}
   </ul>
   <h2>Instructions</h2>
-  <ol>
+  <ol data-recipe-instructions>
     {% for instruction in page.instructions %}
     <li>{{ instruction }}</li>
     {% endfor %}
   </ol>
 </article>
+
+<section class="cook-mode" data-cook-mode hidden aria-label="Cooking mode">
+  <header class="cook-mode-header">
+    <div>
+      <p class="cook-mode-kicker">Cooking mode</p>
+      <h2>{{ page.title }}</h2>
+    </div>
+    <button class="cook-close" type="button" data-cook-close aria-label="Close cooking mode">
+      <span aria-hidden="true">×</span> Close
+    </button>
+  </header>
+
+  <div class="cook-workspace">
+    <aside class="cook-ingredients">
+      <p class="cook-section-label">Ingredients</p>
+      <div data-cook-ingredients></div>
+    </aside>
+    <main class="cook-instructions">
+      <p class="cook-section-label">Method</p>
+      <ol data-cook-instructions></ol>
+    </main>
+  </div>
+</section>
+
+<script src="{{ '/assets/js/recipe-mode.js' | relative_url }}" defer></script>

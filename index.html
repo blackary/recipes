@@ -3,23 +3,43 @@ layout: default
 title: Home
 ---
 
-<h2>Blackwood Family Recipes</h2>
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <p class="eyebrow">Family cookbook</p>
+    <h1 id="home-title">Blackwood Family Recipes</h1>
+    <p>
+      Browse the recipes worth keeping close: weeknight staples, holiday
+      baking, old favorites, and the dishes everyone asks for again.
+    </p>
+  </div>
 
-<input
-  type="text"
-  id="search-input"
-  placeholder="Search for recipes..."
-  autocomplete="off"
-/>
-<div id="search-results" class="dropdown-content">
-  <!-- Search results will be dynamically inserted here -->
-</div>
+  <div class="search-panel">
+    <label for="search-input">Find a recipe</label>
+    <input
+      type="search"
+      id="search-input"
+      placeholder="Search by name or ingredient"
+      autocomplete="off"
+    />
+    <div id="search-results" class="dropdown-content">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</section>
 
 <!-- Recipes Tiles -->
-<div class="recipes-container">
+<section class="recipes-section" aria-labelledby="recipes-title">
+  <div class="section-heading">
+    <p class="eyebrow">Recipe index</p>
+    <h2 id="recipes-title">All Recipes</h2>
+  </div>
+
+  <div class="recipes-container">
   {% for recipe in site.recipes %}
   <a href="{{ recipe.url | prepend: site.baseurl }}" class="recipe-tile">
     <img
+      loading="{% if forloop.index <= 3 %}eager{% else %}lazy{% endif %}"
+      decoding="async"
       src="{%- if recipe.photo -%}
         {%- if recipe.photo contains 'http://' or recipe.photo contains 'https://' -%}
           {{- recipe.photo -}}
@@ -31,12 +51,20 @@ title: Home
       {%- endif -%}"
       alt="{{ recipe.title | escape }}"
     />
-    <h2>{{ recipe.title }}</h2>
+    <div class="recipe-card-body">
+      <h3>{{ recipe.title }}</h3>
 
-    <div class="recipe-content">{{ recipe.content }}</div>
+      <p class="recipe-card-meta">
+        <span>{{ recipe.ingredients | size }} ingredients</span>
+        {% if recipe.servings and recipe.servings != "None" %}
+        <span>{{ recipe.servings }}</span>
+        {% endif %}
+      </p>
+    </div>
   </a>
   {% endfor %}
-</div>
+  </div>
+</section>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -44,13 +72,15 @@ title: Home
     var idx = lunr(function () {
       this.field('title');
       this.field('content');
+      this.field('ingredients');
       this.ref('id');
 
       {% assign count = 0 %}
       {% for recipe in site.recipes %}
       this.add({
-        "title": "{{ recipe.title | escape }}",
-        "content": `{{ recipe.content | strip_html | escape }}`,
+        "title": {{ recipe.title | jsonify }},
+        "content": {{ recipe.content | strip_html | jsonify }},
+        "ingredients": {{ recipe.ingredients | join: " " | jsonify }},
         "id": "{{ count }}"
       });
       {% assign count = count | plus: 1 %}
@@ -75,13 +105,33 @@ title: Home
   var resultsDiv = document.getElementById('search-results');
 
   input.addEventListener('input', function () {
-    var query = this.value;
+    var query = this.value.trim();
     if (query.length < 2) { // Optionally, only search when at least 2 characters are typed
       resultsDiv.style.display = 'none';
       return;
     }
 
-    var results = idx.search(query);
+    var terms = lunr.tokenizer(query);
+    var results = idx.query(function (builder) {
+      terms.forEach(function (term) {
+        var value = term.toString();
+
+        builder.term(value, {
+          fields: ['title'],
+          boost: 10,
+          wildcard: lunr.Query.wildcard.TRAILING
+        });
+        builder.term(value, {
+          fields: ['ingredients'],
+          boost: 3,
+          wildcard: lunr.Query.wildcard.TRAILING
+        });
+        builder.term(value, {
+          fields: ['content'],
+          wildcard: lunr.Query.wildcard.TRAILING
+        });
+      });
+    });
     resultsDiv.innerHTML = ''; // Clear previous results
     if (results.length === 0) {
       resultsDiv.style.display = 'none';
@@ -105,30 +155,3 @@ title: Home
   });
   });
 </script>
-
-<style>
-  .recipes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .recipe-tile {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 30%; /* Adjust based on preference */
-  }
-  /* Media query for medium screens (e.g., tablets): 2 tiles per row */
-  @media (max-width: 800px) {
-    .recipe-tile {
-      width: 45%; /* Adjust width to show 2 tiles per row */
-    }
-  }
-
-  /* Media query for small screens (e.g., smartphones): 1 tile per row */
-  @media (max-width: 500px) {
-    .recipe-tile {
-      width: 90%; /* Adjust width to show 1 tile per row */
-    }
-  }
-</style>

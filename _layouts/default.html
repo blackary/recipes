@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name | default: "Recipes" }}</title>
     <!-- Add these new meta tags and link -->
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#315f4b" />
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}" />
     <link
       rel="apple-touch-icon"
-      href="{{ '/assets/images/icon-192x192.png' | relative_url }}"
+      href="{{ '/assets/images/favicon_cropped.png' | relative_url }}"
     />
     <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!-- Existing content -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
     <link
       rel="stylesheet"
       href="{{ '/assets/css/recipe-styles.css' | relative_url }}"
@@ -24,20 +28,27 @@
       href="{{ '/assets/css/styles.css' | relative_url }}"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-    />
-    <link
       rel="icon"
       type="image/x-icon"
       href="{{ site.baseurl }}/assets/images/favicon2.png"
     />
   </head>
   <body>
-    <header>
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="{{ site.baseurl }}/">
+          <span class="site-brand-mark" aria-hidden="true">B</span>
+          <span class="site-brand-copy">
+            <strong>Blackwood</strong>
+            <small>Family cookbook</small>
+          </span>
+        </a>
+        <button class="install-app-button" type="button" hidden>
+          Install app
+        </button>
+      </div>
     </header>
-    <main>{{ content }}</main>
+    <main class="site-main">{{ content }}</main>
     <!-- Add this script tag at the end of the body -->
     <script>
       if ("serviceWorker" in navigator) {
@@ -48,6 +59,28 @@
         });
       }
 
+      let installPrompt;
+      const installButton = document.querySelector(".install-app-button");
+
+      window.addEventListener("beforeinstallprompt", (event) => {
+        event.preventDefault();
+        installPrompt = event;
+        installButton.hidden = false;
+      });
+
+      installButton.addEventListener("click", async () => {
+        if (!installPrompt) return;
+        installPrompt.prompt();
+        await installPrompt.userChoice;
+        installPrompt = null;
+        installButton.hidden = true;
+      });
+
+      window.addEventListener("appinstalled", () => {
+        installPrompt = null;
+        installButton.hidden = true;
+      });
+
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
@@ -57,6 +90,17 @@
           }
         });
       }
+
+      document.addEventListener("click", (event) => {
+        const backLink = event.target.closest("[data-fallback-back]");
+
+        if (!backLink || !document.referrer || window.history.length <= 1) {
+          return;
+        }
+
+        event.preventDefault();
+        window.history.back();
+      });
     </script>
   </body>
 </html>

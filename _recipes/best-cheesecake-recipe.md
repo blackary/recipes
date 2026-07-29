@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "The BEST Cheesecake Recipe"
+photo: assets/images/recipes/best-cheesecake.webp
 ingredients:
   - "1 ½ cups graham cracker crumbs (170g)"
   - "2 Tablespoons sugar"

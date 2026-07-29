@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Protein Balls"
+photo: assets/images/recipes/protein-balls.webp
 ingredients:
   - "1 cup oats"
   - "1/2 cup peanut butter"

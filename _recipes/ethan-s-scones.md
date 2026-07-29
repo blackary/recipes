@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Ethan's Scones"
+photo: assets/images/recipes/ethan-scones.webp
 ingredients:
   - "1/3 cup butter"
   - "1 3/4 cup flour"
@@ -24,6 +25,4 @@ instructions:
   - "Bake until golden brown (10-12 minutes)"
 servings: 6-8
 ---
-
-
 

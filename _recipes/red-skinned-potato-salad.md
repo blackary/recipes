@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Red-Skinned Potato Salad"
+photo: assets/images/recipes/red-skinned-potato-salad.webp
 ingredients:
   - "2 pounds clean, scrubbed new red potatoes"
   - "6 large eggs"
@@ -18,4 +19,3 @@ servings: 12 servings
 ---
 
 This red-skinned potato salad is easy to make and packed with creamy red potatoes, crumbled crispy bacon, hard-boiled eggs, celery, and onion.
-

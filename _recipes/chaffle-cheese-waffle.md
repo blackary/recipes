@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Chaffle (Cheese Waffle)"
+photo: assets/images/recipes/chaffle.webp
 ingredients:
   - "1 cup mozzarella "
   - "4 eggs"
@@ -12,4 +13,3 @@ servings: 1 waffle
 ---
 
 Used gluten free flour instead of almond flour 
-

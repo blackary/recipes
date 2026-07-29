@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Quick Butternut Squash Soup Recipe"
+photo: assets/images/recipes/butternut-squash-soup.webp
 ingredients:
   - "1 teaspoon olive oil"
   - "1 clove garlic, minced"
