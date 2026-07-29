@@ -6,8 +6,9 @@ const urlsToCache = [
   './assets/js/recipe-mode.js',
   './assets/images/favicon2.png',
   './assets/images/favicon_cropped.png',
-  './assets/images/icon-192.png',
-  './assets/images/icon-512.png',
+  './assets/images/icon-192.png?v=2',
+  './assets/images/icon-180.png?v=2',
+  './assets/images/icon-512.png?v=2',
   './manifest.json'
 ];
 
