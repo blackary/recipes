@@ -7,6 +7,8 @@
   if (!mode || !start || !sourceSteps.length) return;
 
   const ingredientList = mode.querySelector("[data-cook-ingredients]");
+  const ingredientPanel = mode.querySelector(".cook-ingredients");
+  const ingredientToggle = mode.querySelector("[data-cook-ingredients-toggle]");
   const instructionList = mode.querySelector("[data-cook-instructions]");
   const close = mode.querySelector("[data-cook-close]");
   let returnFocus;
@@ -39,11 +41,21 @@
   function closeMode() {
     mode.hidden = true;
     document.body.classList.remove("cook-mode-open");
+    ingredientPanel.classList.remove("ingredients-expanded");
+    ingredientToggle.setAttribute("aria-expanded", "false");
+    ingredientToggle.innerHTML = 'Show all <span aria-hidden="true">↓</span>';
     if (returnFocus) returnFocus.focus();
   }
 
   start.addEventListener("click", openMode);
   close.addEventListener("click", closeMode);
+  ingredientToggle.addEventListener("click", () => {
+    const expanded = ingredientPanel.classList.toggle("ingredients-expanded");
+    ingredientToggle.setAttribute("aria-expanded", String(expanded));
+    ingredientToggle.innerHTML = expanded
+      ? 'Collapse <span aria-hidden="true">↑</span>'
+      : 'Show all <span aria-hidden="true">↓</span>';
+  });
   document.addEventListener("keydown", (event) => {
     if (mode.hidden) return;
     if (event.key === "Escape") closeMode();

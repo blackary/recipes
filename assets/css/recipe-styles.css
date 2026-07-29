@@ -258,6 +258,16 @@ body.cook-mode-open {
   background: #f5dfb8;
 }
 
+.cook-ingredients-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cook-ingredients-toggle {
+  display: none;
+}
+
 .cook-ingredient {
   display: grid;
   padding: 13px 0;
@@ -366,6 +376,36 @@ body.cook-mode-open {
     overflow-y: auto;
     border-right: 0;
     border-bottom: 2px solid #252720;
+  }
+
+  .cook-ingredients.ingredients-expanded {
+    max-height: none;
+  }
+
+  .cook-ingredients-toggle {
+    display: inline-flex;
+    min-height: 34px;
+    margin: -4px 0 4px;
+    padding: 6px 10px;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(37, 39, 32, 0.42);
+    border-radius: 999px;
+    background: rgba(255, 254, 248, 0.45);
+    color: #252720;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0;
+    line-height: 1;
+    text-transform: none;
+  }
+
+  .cook-ingredients-toggle:hover,
+  .cook-ingredients-toggle:focus,
+  .cook-ingredients-toggle:active {
+    border-color: #252720;
+    background: rgba(255, 254, 248, 0.72);
+    color: #252720;
   }
 
   .cook-instructions {

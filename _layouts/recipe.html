@@ -57,7 +57,17 @@ layout: default
 
   <div class="cook-workspace">
     <aside class="cook-ingredients">
-      <p class="cook-section-label">Ingredients</p>
+      <div class="cook-ingredients-heading">
+        <p class="cook-section-label">Ingredients</p>
+        <button
+          class="cook-ingredients-toggle"
+          type="button"
+          data-cook-ingredients-toggle
+          aria-expanded="false"
+        >
+          Show all <span aria-hidden="true">↓</span>
+        </button>
+      </div>
       <div data-cook-ingredients></div>
     </aside>
     <main class="cook-instructions">

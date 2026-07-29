@@ -103,18 +103,57 @@ img {
   text-transform: uppercase;
 }
 
-.install-app-button {
+.site-header .install-app-button {
+  display: inline-flex;
+  min-height: 38px;
   margin: 0;
-  padding: 9px 14px;
+  padding: 8px 14px 8px 11px;
+  align-items: center;
+  gap: 7px;
   border: 1px solid var(--color-primary);
   border-radius: 999px;
-  background: transparent;
-  color: var(--color-primary-dark);
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(35, 69, 54, 0.16);
+  font-size: 0.82rem;
   font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1;
   text-transform: none;
+  transition:
+    background 150ms ease,
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
 }
 
-.install-app-button[hidden] {
+.site-header .install-app-button span {
+  display: grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.site-header .install-app-button:hover,
+.site-header .install-app-button:focus,
+.site-header .install-app-button:active {
+  border-color: var(--color-primary-dark);
+  background: var(--color-primary-dark);
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(35, 69, 54, 0.22);
+  transform: translateY(-1px);
+}
+
+.site-header .install-app-button:focus-visible {
+  outline: 3px solid rgba(49, 95, 75, 0.24);
+  outline-offset: 3px;
+}
+
+.site-header .install-app-button[hidden] {
   display: none;
 }
 
@@ -382,6 +421,37 @@ img {
 
   .recipe-card-body h3 {
     font-size: 1.48rem;
+  }
+
+  body.mobile-search-open {
+    overflow: hidden;
+  }
+
+  body.mobile-search-open::before {
+    position: fixed;
+    z-index: 40;
+    inset: 0;
+    background: rgba(35, 33, 29, 0.34);
+    content: "";
+    backdrop-filter: blur(2px);
+  }
+
+  .search-panel.mobile-search-active {
+    position: fixed;
+    z-index: 50;
+    top: max(12px, env(safe-area-inset-top));
+    right: 12px;
+    left: 12px;
+    padding: 14px;
+    border-color: rgba(49, 95, 75, 0.35);
+    background: var(--color-surface-strong);
+    box-shadow: 0 18px 48px rgba(35, 33, 29, 0.25);
+  }
+
+  .search-panel.mobile-search-active .dropdown-content {
+    position: static;
+    max-height: calc(var(--mobile-search-height, 100dvh) - 116px);
+    margin-top: 8px;
   }
 }
 
