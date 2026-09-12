@@ -3,7 +3,6 @@ layout: recipe
 title: "Bundt Pan Pound Cake"
 photo: assets/images/recipes/bundt-pan-pound-cake.webp
 ingredients:
-  - "1 Cup Flour"
   - "2 sticks (1 cup) butter"
   - "1/2 cup shortening"
   - "3 cups sugar"
