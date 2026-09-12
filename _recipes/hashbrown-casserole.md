@@ -1,18 +1,19 @@
 ---
 layout: recipe
-title: "Cheesy Potatoe Casserole"
+title: "Cheesy Potato Casserole"
 photo: assets/images/recipes/hashbrown-casserole.webp
 ingredients:
-  - "2 pgk (4 pounds) shredded hashbrowns"
-  - "2 can cream of chicken soup"
+  - "2 pkg. (4 pounds) shredded hash browns"
+  - "2 cans cream of chicken soup"
   - "16 oz. sharp cheddar cheese"
   - "16 oz. sour cream"
-  - "salt and pepper (no more than 1 tsp each)"
+  - "Salt and pepper (no more than 1 tsp. each)"
 instructions:
-  - "Combine last 4 ingredients and then add to the potatoes. Stir well. "
-  - "Place in crockpot and cook on high 8 hours."
+  - "Combine the soup, cheese, sour cream, salt, and pepper, then add to the potatoes. Stir well."
+  - "Place in a slow cooker and cook on low for 8 hours."
 servings: None
 ---
 
-This is a double recipe
+This is a double recipe.
+
 Recipe by Sharon McKissick
