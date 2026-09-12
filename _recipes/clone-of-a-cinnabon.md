@@ -26,7 +26,7 @@ instructions:
   - "Starting at the longer end, roll up the dough; cut into 12 rolls. Place rolls in a lightly greased 9x13-inch baking pan. Cover and let rise until nearly doubled, about 30 minutes."
   - "Meanwhile, preheat the oven to 400 degrees F (200 degrees C)."
   - "Bake rolls in the preheated oven until golden brown, about 15 minutes."
-  - "While rolls are baking, prepare icing: Beat confectioners' sugar, butter, cream cheese, confectioners' sugar, vanilla, and salt until creamy."
+  - "While rolls are baking, prepare icing: Beat confectioners' sugar, butter, cream cheese, vanilla, and salt until creamy."
   - "Spread icing on warm rolls before serving."
 servings: 12 servings
 ---
