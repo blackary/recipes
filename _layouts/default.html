@@ -51,6 +51,31 @@
     <main class="site-main">{{ content }}</main>
     <!-- Add this script tag at the end of the body -->
     <script>
+      let wakeLock = null;
+
+      async function keepScreenAwake() {
+        if (!("wakeLock" in navigator) || document.visibilityState !== "visible") {
+          return;
+        }
+
+        try {
+          wakeLock = await navigator.wakeLock.request("screen");
+          wakeLock.addEventListener("release", () => {
+            wakeLock = null;
+          });
+        } catch (error) {
+          // Wake Lock can be denied by the browser, device, or power settings.
+          console.debug("Screen wake lock unavailable:", error);
+        }
+      }
+
+      window.addEventListener("load", keepScreenAwake);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible" && wakeLock === null) {
+          keepScreenAwake();
+        }
+      });
+
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker.register(
